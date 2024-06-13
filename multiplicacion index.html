@@ -1,0 +1,48 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio ciclos</title>
+</head>
+<body>
+
+
+    <script>
+
+    
+    var numero,multiplicacion = 1, factorial = 1;
+
+    ////ingresar la entrada
+    numero = prompt("Ingrese un numero:");
+    numero = parseInt(numero);
+    
+    //// proceso
+    
+    //// sub proceso: generar tabla de multiplicar
+    //// desde el 1 hasta el numero ingresdado
+    document.write("<h2>Tabla de multiplicar</h2>")
+    for ( let i = 1 ; i<= numero ; i = i+1){
+        // calcular la multiplicacion
+        multiplicacion=i*numero;  
+        
+        //mostrar la salida
+        document.write( i + " x " + numero + " = " + multiplicacion);
+        document.write("<br>");
+    }
+
+    // sub-proceso: generar los factoriales
+    document.write("<h2>Fatoriales</h2>")
+    for (let j = 1 ; j <= numero ; j = j+1){
+        ///calcular el factorial
+        factorial = factorial * j;
+        /////mostrar la salida
+        document.write("Factorial de " + j + " es: " + factorial)
+        document.write("<br>");
+    }
+
+
+    
+    </script>
+</body>
+</html>
